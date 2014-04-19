@@ -3,16 +3,23 @@ package postmon
 import (
     "encoding/json"
     "io/ioutil"
+    "log"
     "net/http"
 )
 
 func BuscarCep(cep string) (map[string]interface{}, error) {
 
-    res, _ := http.Get("http://api.postmon.com.br/v1/cep/" + cep)
+    res, err := http.Get("http://api.postmon.com.br/v1/cep/" + cep)
+    if err != nil {
+        log.Fatal(err)
+    }
 
     var cep_result map[string]interface{}
 
-    body, _ := ioutil.ReadAll(res.Body)
+    body, err := ioutil.ReadAll(res.Body)
+    if err != nil {
+        log.Fatal(err)
+    }
 
     json_body := []byte(body)
 
