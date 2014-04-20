@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/PostmonAPI/postmon-golang.svg)](https://travis-ci.org/PostmonAPI/postmon-golang)
 
-Postmon Golang
+PostmonGo
 ===============
 
 Go Wrapper for Postmon API
@@ -12,11 +12,11 @@ Uso
     
     import (
         "fmt"
-        "github.com/PostmonAPI/postmon-golang"
+        "github.com/PostmonAPI/postmongo"
     )
 
     func main() {
-        res, err := postmon.BuscarCep("01419101")
+        res, err := postmongo.BuscarCep("01419101")
         fmt.Println(res)
         fmt.Println(err)
     }
