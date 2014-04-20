@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/PostmonAPI/postmon-golang.svg)](https://travis-ci.org/PostmonAPI/postmon-golang)
+[![Build Status](https://travis-ci.org/PostmonAPI/postmongo.svg?branch=master)](https://travis-ci.org/PostmonAPI/postmongo)
 
 PostmonGo
 ===============
