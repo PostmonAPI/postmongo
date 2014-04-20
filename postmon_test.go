@@ -1,4 +1,4 @@
-package postmon
+package postmongo
 
 import (
     "reflect"
