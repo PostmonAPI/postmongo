@@ -1,3 +1,7 @@
+// Copyright 2014 The Postmon API Team. All rights reserved.
+// Use of this source code is governed by an Apache-style
+// license tha can be found in the README.md file
+
 package postmongo
 
 import (
@@ -5,6 +9,7 @@ import (
     "testing"
 )
 
+// TestPostmon test if BuscarCep returns the expected result
 func TestPostmon(t *testing.T) {
     info := map[string]interface{}{
         "complemento": "de 2161 ao fim - lado ímpar",
