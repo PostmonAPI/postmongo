@@ -8,7 +8,8 @@ import (
 
 func BuscarCep(cep string) (map[string]interface{}, error) {
 
-	res, err := http.Get("http://api.poastmon.com.br/v1/cep/" + cep)
+	res, err := http.Get("http://api.postmon.com.br/v1/cep/" + cep)
+
 	if err != nil {
 		return nil, err
 	}
