@@ -5,31 +5,31 @@
 package postmongo
 
 import (
-    "encoding/json"
-    "io/ioutil"
-    "net/http"
+	"encoding/json"
+	"io/ioutil"
+	"net/http"
 )
 
 // BuscarCep returns a map with all results about the CEP
 // An error will be launched if any problems occur
 func BuscarCep(cep string) (map[string]interface{}, error) {
 
-    res, err := http.Get("http://api.postmon.com.br/v1/cep/" + cep)
+	res, err := http.Get("http://api.postmon.com.br/v1/cep/" + cep)
 
-    if err != nil {
-        return nil, err
-    }
+	if err != nil {
+		return nil, err
+	}
 
-    var cep_result map[string]interface{}
+	var cepResult map[string]interface{}
 
-    body, err := ioutil.ReadAll(res.Body)
-    if err != nil {
-        return nil, err
-    }
+	body, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		return nil, err
+	}
 
-    json_body := []byte(body)
+	jsonBody := []byte(body)
 
-    decoding := json.Unmarshal(json_body, &cep_result)
+	decoding := json.Unmarshal(jsonBody, &cepResult)
 
-    return cep_result, decoding
+	return cepResult, decoding
 }
