@@ -21,6 +21,14 @@ Uso
         fmt.Println(err)
     }
 
+
+ToDo
+------
+
+    * Adicionar suporte ao método de rastreio do Postmon
+    * Melhorar os testes unitários
+
+
 Licença
 --------
 

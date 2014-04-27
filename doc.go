@@ -22,10 +22,19 @@ The most simplest way to use:
             fmt.Println(err)
         }
 
-See more about the "Postmon API" at:
-http://postmon.com.br
 
-See all Wrappers and API Source Code at:
-http://github.com/PostmonAPI
+ToDo
+
+List of things we need to improve:
+
+    * Add support for Postmon's method rastreio
+    * Improve unit tests
+
+
+Useful links
+
+See more about the "Postmon API" at http://postmon.com.br
+
+See all Wrappers and API Source Code at http://github.com/PostmonAPI
 */
 package postmongo
