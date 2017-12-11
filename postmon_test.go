@@ -18,12 +18,12 @@ func TestPostmon(t *testing.T) {
         "cep":         "01419101",
         "logradouro":  "Alameda Santos",
         "estado_info": map[string]interface{}{
-            "area_km2":    "248.222,801",
+            "area_km2":    "248.221,996",
             "codigo_ibge": "35",
             "nome":        "São Paulo",
         },
         "cidade_info": map[string]interface{}{
-            "area_km2":    "1521,101",
+            "area_km2":    "1521,11",
             "codigo_ibge": "3550308",
         },
         "estado": "SP",
